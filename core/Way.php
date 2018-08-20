@@ -6,9 +6,15 @@
  class Way
  {
  	
- 	public static function ruta($recurso)
+ 	public function ruta($recurso)
  	{
  		echo '"vista/'.$recurso.'"';
+ 	}
+ 		
+ 			public function rutaNoticias($recurso)
+ 	{
+ 		echo '"noticias/'.$recurso.'"';
+
  	}
  		
 

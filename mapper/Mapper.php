@@ -1,7 +1,7 @@
 <?php
 
 abstract class Mapper {
-	public $config = array('localhost:3306','root','Soporte','clases');
+	public $config = array('localhost:3306','root','Soporte','blog');
 	
 
     protected $db;

@@ -1,10 +1,11 @@
 <?php 
-  class entrada{  
+  class entrada{   
  private $entrada_id ; 
  private $entrada_titulo ; 
  private $entrada_contenido ; 
  private $entrada_enlace ; 
  private $entrada_autor ; 
+ private $fecha;
   public function __construct(array $data = null) { 
  if (!is_null($data)) { 
 
@@ -59,4 +60,14 @@ public function getentrada_enlace(){
 public function getentrada_autor(){ 
  return $this->entrada_autor; 
 }
+
+public function setfecha($fecha){ 
+ $this->fecha = $fecha; 
+ return $this; 
+}
+
+ public function getfecha(){ 
+ return $this->fecha; 
+}
+
 }

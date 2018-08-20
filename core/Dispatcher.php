@@ -1,5 +1,6 @@
 <?php
 include_once 'Render.php';
+include_once substr(getcwd(), 0,26).'/controller/entradaController.php';
 class Dispatcher { 
       private $controller;
       private $action;
@@ -17,7 +18,8 @@ class Dispatcher {
       $this->direccionarVista();
     }else{
       if($router[1] == 'noticias'){
-        print_r($router[2]);
+        $entradaController = new entradaController();
+        $this->direccionarNoticia($entradaController->getEntradaByEnlace($router[2]));
       }else{
       $this->controller = $router[1]."Controller"; 
       $this->action = $router[2]; 
@@ -53,7 +55,6 @@ class Dispatcher {
      }
 
      public function direccionarVista(){
-      $ruta = getcwd();
       switch ($this->vista) {
         case 'noticias':
           $render = new Render('newsroom'); 
@@ -67,8 +68,12 @@ class Dispatcher {
           $render = new Render($this->vista); 
           break;
       }
+        $render->mostrar(); 
+     }
 
-       $render->mostrar(); 
+     public function direccionarNoticia($entrada = null){     
+          $render = new Render('news',$entrada); 
+           $render->mostrar(); 
      }
    
 

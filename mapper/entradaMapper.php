@@ -5,6 +5,40 @@
             include_once substr(getcwd(), 0,26).'\entity\entrada.php';
 
          class entradaMapper extends Mapper{  
+
+            public function getEntradaByEnlace($enlace)
+            {
+                $sql = "SELECT e.`entrada_titulo` AS 'titulo',
+                               e.`entrada_contenido` AS 'contenido',
+                               e.`entrada_enlace` AS 'enlace',
+                               u.`username` AS 'autor',
+                               t.`update_time` AS 'fecha' 
+                        FROM entrada e 
+                        INNER JOIN `user` u 
+                        ON (e.entrada_autor = u.`username`) 
+                        INNER JOIN `timestamps` t 
+                        ON (e.entrada_id = t.`entrada_entrada_id`) 
+                        WHERE e.entrada_enlace = '$enlace'";
+
+                foreach ($this->db->query($sql) as $row) {
+                     $result = $row;
+                     break;
+                }
+               
+
+                
+                $entrada = new entrada();
+                $entrada->setentrada_titulo($result['titulo']); 
+                $entrada->setentrada_contenido($result['contenido']) ; 
+                $entrada->setentrada_enlace($result['enlace']) ; 
+                $entrada->setentrada_autor($result['autor']) ; 
+                $entrada->setfecha($result['fecha']);
+                $array = array(
+                "entrada" => $entrada,
+                );
+                return $array;
+            }
+
   public function listarentrada() {  
 
 						$sql = "SELECT entrada_id, entrada_titulo, entrada_contenido, entrada_enlace, entrada_autor FROM entrada" ;  

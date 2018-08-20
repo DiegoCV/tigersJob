@@ -15,12 +15,20 @@ class entradaController{
         $entradaMapper = new entradaMapper();
         var_dump($entradaMapper->crearentrada($entrada));
 	}
+
 	public function listar(){;
 		$entradaMapper = new entradaMapper();
 		$entrada = $entradaMapper->listarentrada();
 		$render = new Render('listados/entradaList',$entrada);
         $render->mostrar();
 	}
+
+    public function getEntradaByEnlace($enlace)
+    {
+        $entradaMapper = new entradaMapper();
+        return $entradaMapper->getEntradaByEnlace($enlace);
+    }
+    
 
 	public function actualizar(){
 

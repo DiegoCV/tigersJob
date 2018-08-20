@@ -1,12 +1,14 @@
 <?php
-//include_once '../vista/';
+include_once 'way.php';
 class Render {
     private $vista;
     private $datos;
+    private $way;
 
     public function __construct($vista, array $datos = null) {
         $this->vista = $vista;
         $this->datos = $datos;
+        $this->way = new Way();
     }
 
     public function mostrar() {

@@ -13,7 +13,7 @@
  		
  			public function rutaNoticias($recurso)
  	{
- 		echo '"noticias/'.$recurso.'"';
+ 		echo '"../vista/'.$recurso.'"';
 
  	}
  		

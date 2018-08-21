@@ -6,6 +6,7 @@
  private $entrada_enlace ; 
  private $entrada_autor ; 
  private $fecha;
+ private $imagen;
   public function __construct(array $data = null) { 
  if (!is_null($data)) { 
 
@@ -68,6 +69,15 @@ public function setfecha($fecha){
 
  public function getfecha(){ 
  return $this->fecha; 
+}
+
+public function setimagen($imagen){ 
+ $this->imagen = $imagen; 
+ return $this; 
+}
+
+ public function getimagen(){ 
+ return $this->imagen; 
 }
 
 }

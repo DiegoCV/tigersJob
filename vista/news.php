@@ -1,8 +1,3 @@
-<?php 
-echo 'jajaj';
-
-$this->way->rutaNoticias("assets/lib/bootstrap/dist/css/bootstrap.min.css"); 
-$this->way->ruta("assets/lib/bootstrap/dist/css/bootstrap.min.css"); ?>
 <!DOCTYPE html>
 <html lang="en-US">
    <!-- Mirrored from markup.themewagon.com/tryelixir/news.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jul 2018 00:08:01 GMT -->
@@ -13,28 +8,28 @@ $this->way->ruta("assets/lib/bootstrap/dist/css/bootstrap.min.css"); ?>
       <!--  --><!--    Document Title--><!-- =============================================-->
       <title>Elixir | Beautiful Site Template for Agencies &amp; Professionals</title>
       <!--  --><!--    Favicons--><!--    =============================================-->
-      <link rel="apple-touch-icon" sizes="180x180" href=<?php $this->way->ruta("assets/images/favicons/apple-touch-icon.png");?>>
-      <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
-      <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicons/favicon.ico">
-      <link rel="manifest" href="assets/images/favicons/manifest.html">
-      <link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
-      <meta name="msapplication-TileImage" content="assets/images/favicons/mstile-150x150.png">
+      <link rel="apple-touch-icon" sizes="180x180" href=<?php $this->way->rutaNoticias("assets/images/favicons/apple-touch-icon.png");?>>
+      <link rel="icon" type="image/png" sizes="32x32" href=<?php $this->way->rutaNoticias("assets/images/favicons/favicon-32x32.png");?>>
+      <link rel="icon" type="image/png" sizes="16x16" href=<?php $this->way->rutaNoticias("assets/images/favicons/favicon-16x16.png");?>>
+      <link rel="shortcut icon" type="image/x-icon" href=<?php $this->way->rutaNoticias("assets/images/favicons/favicon.ico");?>>
+      <link rel="manifest" href=<?php $this->way->rutaNoticias("assets/images/favicons/manifest.html");?>>
+      <link rel="mask-icon" href=<?php $this->way->rutaNoticias("assets/images/favicons/safari-pinned-tab.svg");?> color="#5bbad5">
+      <meta name="msapplication-TileImage" content=<?php $this->way->rutaNoticias("assets/images/favicons/mstile-150x150.png");?>>
       <meta name="theme-color" content="#ffffff">
-      <!--  --><!--    Stylesheets--><!--    =============================================--><!-- Default stylesheets-- >
-      <link href=<?php $this->way->ruta("assets/lib/bootstrap/dist/css/bootstrap.min.css");?> rel="stylesheet">
+
+      <link href=<?php $this->way->rutaNoticias("assets/lib/bootstrap/dist/css/bootstrap.min.css");?> rel="stylesheet">
       <!-- Template specific stylesheets-->
-      <link href=<?php $this->way->ruta("assets/lib/loaders.css/loaders.min.css");?> rel="stylesheet">
+      <link href=<?php $this->way->rutaNoticias("assets/lib/loaders.css/loaders.min.css" );?> rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,600,700,800" rel="stylesheet">
-      <link href="assets/lib/iconsmind/iconsmind.css" rel="stylesheet">
+      <link href=<?php $this->way->rutaNoticias("assets/lib/iconsmind/iconsmind.css");?> rel="stylesheet">
       <link href="../../code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
-      <link href="assets/lib/hamburgers/dist/hamburgers.min.css" rel="stylesheet">
-      <link href="assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-      <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
-      <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+      <link href=<?php $this->way->rutaNoticias("assets/lib/hamburgers/dist/hamburgers.min.css");?> rel="stylesheet">
+      <link href=<?php $this->way->rutaNoticias("/assets/lib/font-awesome/css/font-awesome.min.css");?> rel="stylesheet">
+      <link href=<?php $this->way->rutaNoticias("/assets/lib/owl.carousel/dist/assets/owl.carousel.min.css");?> rel="stylesheet">
+      <link href=<?php $this->way->rutaNoticias("/assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css");?> rel="stylesheet">
       <!-- Main stylesheet and color file-->
-      <link href="assets/css/style.css" rel="stylesheet">
-      <link href="assets/css/custom.css" rel="stylesheet">
+      <link href=<?php $this->way->rutaNoticias("/assets/css/style.css");?> rel="stylesheet">
+      <link href=<?php $this->way->rutaNoticias("/assets/css/custom.css");?>rel="stylesheet">
    </head>
    <body data-spy="scroll" data-target=".inner-link" data-offset="60">
       <main>
@@ -142,37 +137,21 @@ $this->way->ruta("assets/lib/bootstrap/dist/css/bootstrap.min.css"); ?>
                      <div class="overflow-hidden" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                         <div data-zanim='{"delay":0}'>
                            <a class="d-inline-block color-7" href="#">
-                              <?php $this->datos['entrada']->getentrada_autor();?>                             
+                              <?php echo $this->datos['entrada']->getentrada_autor();?>                           
                            </a>, &nbsp;
                            <a class="d-inline-block color-7" href="#">
-                              May 15, 2017
+                              <?php echo $this->datos['entrada']->getfecha();?>
                            </a>
                         </div>
-                        <h4 data-zanim='{"delay":0.1}'>Tax impacts of lease accounting change</h4>
+                        <h4 data-zanim='{"delay":0.1}'><?php echo $this->datos['entrada']->getentrada_titulo();?></h4>
                      </div>
                   </div>
                   <div class="col-lg-8">
                      <div class="row">
-                        <div class="col-12"><img class="radius-tr-secondary radius-tl-secondary" src="assets/images/news-1.jpg" alt=""></div>
+                        <div class="col-12"><img class="radius-tr-secondary radius-tl-secondary" src=<?php $this->way->rutaNoticias("assets/images/season.jpg"); ?> alt=""></div>
                         <div class="col-12">
                            <div class="background-white p-5 radius-secondary">
-                              <p class="dropcap">On 9 August 2016, HMRC released a consultation document to flag some potential tax impacts that a forthcoming change in lease accounting may have on the funding of plant and machinery. From 2019, lessees using IFRS (including FRS 101), as opposed to FRS 102 (UK GAAP), will no longer have to distinguish between finance and operating leases. All leases (except some small value leases or very short leases) will be capitalized on the lessee’s balance sheet at the NPV of the future payments from the day the lease starts. This accounting change will not affect lessors. At the moment, the tax treatment typically depends on whether a lease is a ‘long funding lease’ or not. If it is, then it is the lessee who gets capital allowances (CAs). However, much anti-avoidance legislation is focused on the concept of finance leases and the IFRS change will interfere with that. In its consultation, HMRC has floated four options for addressing the issue. The first is broadly the status quo, with some tinkering. The others contain the more radical suggestion to move towards an accounts-based regime for taxing leases, using a system of debits and credits somewhat akin to the loan relationship regime and which would similarly eliminate the capital/revenue divide.  ith such a proposal, including:</p>
-                              <a class="d-block my-3 ml-4" href="#">gust-2016/tax-impacts-of-lease-accunting-changes#sthash.J6Ddydx2.dpuf</a>
-                              <p>HMRC has identified several issues which should be addressed in conjunction with such a proposal, including:
-                              <ol>
-                                 <li>
-                                    <p class="mb-2">Can HMRC trust companies to use ‘sensible’ depreciation policies or will there need to be legislation for it?</p>
-                                 </li>
-                                 <li>
-                                    <p class="mb-2">In order to avoid distorting the ‘lease or buy’ decision, the government may be willing to offer an enhanced deduction to lessees that would otherwise have qualified for the AIA.</p>
-                                 </li>
-                                 <li>
-                                    <p class="mb-2">Could HMRC combine an accounts-based regime with giving the lessee an option to claim CAs on the ‘right of use’ asset?</p>
-                                 </li>
-                              </ol>
-                              </p>
-                              <p>Inevitably, there is a long way to go on these issues. But the eventual outcome is potentially quite far-reaching for UK corporates – for example if HMRC can become comfortable on the issue of ‘sensible’ depreciation policies without a lot of new anti-avoidance legislation.</p>
-                              <p>If you have any questions on the tax implications of lease accounting please contact David Porter.</p>
+                             <?php echo $this->datos['entrada']->getentrada_contenido();?>
                            </div>
                         </div>
                         <div class="col-12">
@@ -407,15 +386,16 @@ $this->way->ruta("assets/lib/bootstrap/dist/css/bootstrap.min.css"); ?>
       </main>
       <!--  --><!--    JavaScripts--><!--    =============================================-->
       <script src="../../cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-      <script src="assets/lib/jquery/dist/jquery.min.js"></script>
+      <script src=<?php $this->way->rutaNoticias("assets/lib/jquery/dist/jquery.min.js");?>></script>
       <script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-      <script src=<?php $this->way->ruta("assets/lib/bootstrap/dist/js/bootstrap.min.js");?>></script>
-      <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="assets/lib/imagesloaded/imagesloaded.pkgd.min.js"></script><script src="assets/lib/gsap/src/minified/TweenMax.min.js"></script>
-      <script src="assets/lib/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
-      <script src="assets/lib/CustomEase.min.js"></script>
-      <script src="assets/js/config.js"></script>
-      <script src="assets/js/zanimation.js"></script><!-- Hotjar Tracking Code for http://markup.themewagon.com/tryelixir--><script>(function(h,o,t,j,a,r){
+      <script src=<?php $this->way->rutaNoticias("assets/lib/bootstrap/dist/js/bootstrap.min.js");?>></script>
+      <script src=<?php $this->way->rutaNoticias("assets/lib/bootstrap/dist/js/bootstrap.min.js");?>></script>
+      <script src=<?php $this->way->rutaNoticias("assets/lib/imagesloaded/imagesloaded.pkgd.min.js");?>></script>
+      <script src=<?php $this->way->rutaNoticias("assets/lib/gsap/src/minified/TweenMax.min.js");?>></script>
+      <script src=<?php $this->way->rutaNoticias("assets/lib/gsap/src/minified/plugins/ScrollToPlugin.min.js");?>></script>
+      <script src=<?php $this->way->rutaNoticias("assets/lib/CustomEase.min.js");?>></script>
+      <script src=<?php $this->way->rutaNoticias("/assets/js/config.js");?>></script>
+      <script src=<?php $this->way->rutaNoticias("/assets/js/zanimation.js");?>></script><!-- Hotjar Tracking Code for http://markup.themewagon.com/tryelixir--><script>(function(h,o,t,j,a,r){
    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
    h._hjSettings={hjid:710415,hjsv:6};
    a=o.getElementsByTagName('head')[0];
@@ -429,7 +409,10 @@ $this->way->ruta("assets/lib/bootstrap/dist/css/bootstrap.min.css"); ?>
    gtag('js', new Date());
    gtag('config', 'UA-76729372-5');
    
-</script><script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script><script src="assets/js/core.js"></script><script src="assets/js/main.js"></script>
+</script>
+<script src=<?php $this->way->rutaNoticias("assets/lib/owl.carousel/dist/owl.carousel.min.js");?>></script>
+<script src=<?php $this->way->rutaNoticias("assets/js/core.js");?>></script>
+   <script src=<?php $this->way->rutaNoticias("assets/js/main.js");?>></script>
 </body>
    <!-- Mirrored from markup.themewagon.com/tryelixir/news.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jul 2018 00:08:37 GMT -->
 </html>

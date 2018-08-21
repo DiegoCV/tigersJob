@@ -54,17 +54,28 @@
 				        return $results; 
 
 			    	}    public function crearentrada(entrada $entrada) {
-$entrada_titulo = $entrada->getentrada_titulo(); 
+/**$entrada_titulo = $entrada->getentrada_titulo(); 
 $entrada_contenido = $entrada->getentrada_contenido(); 
 $entrada_enlace = $entrada->getentrada_enlace(); 
 $entrada_autor = $entrada->getentrada_autor(); 
  
 
-        			$sql = "INSERT INTO entrada (entrada_titulo,entrada_contenido,entrada_enlace,entrada_autor) VALUES ('$entrada_titulo','$entrada_contenido','$entrada_enlace','$entrada_autor')"; 
+        			$sql = "INSERT INTO entrada (entrada_titulo,entrada_contenido,entrada_enlace,entrada_autor) VALUES ('$entrada_titulo','$entrada_contenido','$entrada_enlace','$entrada_autor')"; **/
+                    $imagen = $entrada->getimagen();
+                    $data = $imagen->getimagen();
+                    $tipo =$imagen->getimagen_tipo();
+                    $r = 3;
+                    //echo $tipo.$data;
+    $sentencia = $this->db->prepare(" INSERT INTO imagen (imagen, imagen_tipo, entrada_entrada_id) VALUES ( ? , ? , ?) ");
+            
+        $sentencia->bindParam(1, $data, PDO::PARAM_LOB);
+        $sentencia->bindParam(2, $tipo);
+        $sentencia->bindParam(3,$r);
 
-        			$stmt   = $this->db->prepare($sql);
+        $this->db->beginTransaction();
+        $result = $sentencia->execute();
+        $this->db->commit();
 
-    				$result = $stmt->execute();
 
 					    if (!$result) {
 
@@ -72,7 +83,7 @@ $entrada_autor = $entrada->getentrada_autor();
 
 					    } else {
 
-					        echo "GUARDADOBIEN";
+					        return $result;
 
 					    }
 

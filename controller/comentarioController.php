@@ -11,9 +11,9 @@ class comentarioController{
      *
      */
 	public function crear(){
-		$comentario       = new comentario($_POST['data']);
-        $comentarioMapper = new comentarioMapper();
-        var_dump($comentarioMapper->crearcomentario($comentario));
+		//$comentario       = new comentario($_POST['data']);
+       // $comentarioMapper = new comentarioMapper();
+       var_dump($comentarioMapper->crearcomentario('gg'));
 	}
 	public function listar(){;
 		$comentarioMapper = new comentarioMapper();

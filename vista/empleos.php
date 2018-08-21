@@ -11,31 +11,31 @@
   <!--  -->
   <!--    Favicons-->
   <!--    =============================================-->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
-  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicons/favicon.ico">
-  <link rel="manifest" href="assets/images/favicons/manifest.html">
-  <link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileImage" content="assets/images/favicons/mstile-150x150.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="vista/assets/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="vista/assets/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="vista/assets/images/favicons/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/x-icon" href="vista/assets/images/favicons/favicon.ico">
+  <link rel="manifest" href="vista/assets/images/favicons/manifest.html">
+  <link rel="mask-icon" href="vista/assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileImage" content="vista/assets/images/favicons/mstile-150x150.png">
   <meta name="theme-color" content="#ffffff">
   <!--  -->
   <!--    Stylesheets-->
   <!--    =============================================-->
   <!-- Default stylesheets-->
-  <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vista/assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Template specific stylesheets-->
-  <link href="assets/lib/loaders.css/loaders.min.css" rel="stylesheet">
+  <link href="vista/assets/lib/loaders.css/loaders.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,600,700,800" rel="stylesheet">
-  <link href="assets/lib/iconsmind/iconsmind.css" rel="stylesheet">
+  <link href="vista/assets/lib/iconsmind/iconsmind.css" rel="stylesheet">
   <link href="../../code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
-  <link href="assets/lib/hamburgers/dist/hamburgers.min.css" rel="stylesheet">
-  <link href="assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+  <link href="vista/assets/lib/hamburgers/dist/hamburgers.min.css" rel="stylesheet">
+  <link href="vista/assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="vista/assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="vista/assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
   <!-- Main stylesheet and color file-->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/custom.css" rel="stylesheet">
+  <link href="vista/assets/css/style.css" rel="stylesheet">
+  <link href="vista/assets/css/custom.css" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target=".inner-link" data-offset="60">
@@ -55,7 +55,7 @@
     <div class="znav-white znav-container sticky-top navbar-elixir" id="znav-container">
       <div class="container">
         <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand overflow-hidden pr-3" href="index-2.html"><img src="assets/images/logo-dark.png" alt="" /></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          <a class="navbar-brand overflow-hidden pr-3" href="index-2.html"><img src="vista/assets/images/logo-dark.png" alt="" /></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><div class="hamburger hamburger--emphatic"><div class="hamburger-box"><div class="hamburger-inner"></div></div></div></button>
           <div
             class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -206,12 +206,12 @@
     <section class="background-10 py-6">
       <div class="container">
         <div class="row align-items-center" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-          <div class="col-4 col-md-2 my-3 overflow-hidden"><img src="assets/images/partner/logo2.png" alt="" data-zanim="{}" /></div>
-          <div class="col-4 col-md-2 my-3 overflow-hidden"><img src="assets/images/partner/logo1.png" alt="" data-zanim="{}" /></div>
-          <div class="col-4 col-md-2 my-3 overflow-hidden"><img src="assets/images/partner/logo6.png" alt="" data-zanim="{}" /></div>
-          <div class="col-4 col-md-2 my-3 overflow-hidden"><img src="assets/images/partner/logo3.png" alt="" data-zanim="{}" /></div>
-          <div class="col-4 col-md-2 my-3 overflow-hidden"><img src="assets/images/partner/logo5.png" alt="" data-zanim="{}" /></div>
-          <div class="col-4 col-md-2 my-3 overflow-hidden"><img src="assets/images/partner/logo4.png" alt="" data-zanim="{}" /></div>
+          <div class="col-4 col-md-2 my-3 overflow-hidden"><img src="vista/assets/images/partner/logo2.png" alt="" data-zanim="{}" /></div>
+          <div class="col-4 col-md-2 my-3 overflow-hidden"><img src="vista/assets/images/partner/logo1.png" alt="" data-zanim="{}" /></div>
+          <div class="col-4 col-md-2 my-3 overflow-hidden"><img src="vista/assets/images/partner/logo6.png" alt="" data-zanim="{}" /></div>
+          <div class="col-4 col-md-2 my-3 overflow-hidden"><img src="vista/assets/images/partner/logo3.png" alt="" data-zanim="{}" /></div>
+          <div class="col-4 col-md-2 my-3 overflow-hidden"><img src="vista/assets/images/partner/logo5.png" alt="" data-zanim="{}" /></div>
+          <div class="col-4 col-md-2 my-3 overflow-hidden"><img src="vista/assets/images/partner/logo4.png" alt="" data-zanim="{}" /></div>
         </div>
         <!--/.row-->
       </div>
@@ -299,7 +299,7 @@
       <div class="container">
         <div class="row align-items-center" style="opacity: 0.85;">
           <div class="col-sm-3 text-sm-left">
-            <a href="index-2.html"><img src="assets/images/logo-light.png" alt="" /></a>
+            <a href="index-2.html"><img src="vista/assets/images/logo-light.png" alt="" /></a>
           </div>
           <div class="col-sm-6 mt-3 mt-sm-0">
             <p class="color-white lh-6 mb-0 fw-600">&copy; Copyright 2018 Elixir Inc.</p>
@@ -315,16 +315,16 @@
   <!--    JavaScripts-->
   <!--    =============================================-->
   <script src="../../cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-  <script src="assets/lib/jquery/dist/jquery.min.js"></script>
+  <script src="vista/assets/lib/jquery/dist/jquery.min.js"></script>
   <script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
     crossorigin="anonymous"></script>
-  <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="assets/lib/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/lib/gsap/src/minified/TweenMax.min.js"></script>
-  <script src="assets/lib/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
-  <script src="assets/lib/CustomEase.min.js"></script>
-  <script src="assets/js/config.js"></script>
-  <script src="assets/js/zanimation.js"></script>
+  <script src="vista/assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="vista/assets/lib/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="vista/assets/lib/gsap/src/minified/TweenMax.min.js"></script>
+  <script src="vista/assets/lib/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
+  <script src="vista/assets/lib/CustomEase.min.js"></script>
+  <script src="vista/assets/js/config.js"></script>
+  <script src="vista/assets/js/zanimation.js"></script>
   <!-- Hotjar Tracking Code for http://markup.themewagon.com/tryelixir-->
   <script>
     (function(h,o,t,j,a,r){
@@ -341,6 +341,6 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'UA-76729372-5');
 
-</script><script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script><script src="assets/js/core.js"></script><script src="assets/js/main.js"></script></body>
+</script><script src="vista/assets/lib/owl.carousel/dist/owl.carousel.min.js"></script><script src="vista/assets/js/core.js"></script><script src="vista/assets/js/main.js"></script></body>
 <!-- Mirrored from markup.themewagon.com/tryelixir/services.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jul 2018 00:06:48 GMT -->
 </html>

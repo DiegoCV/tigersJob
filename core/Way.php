@@ -10,8 +10,13 @@
  	{
  		echo '"vista/'.$recurso.'"';
  	}
+
+ 	public function rutaImg($entrada_entrada_id)
+ 	{
+ 		echo '"/tigersJob/imagen/getImagen/'.$entrada_entrada_id.'"';
+ 	}
  		
- 			public function rutaNoticias($recurso)
+ 	public function rutaNoticias($recurso)
  	{
  		echo '"../vista/'.$recurso.'"';
 

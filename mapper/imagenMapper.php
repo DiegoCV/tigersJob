@@ -5,6 +5,19 @@
             include_once substr(getcwd(), 0,26).'\entity\imagen.php';
 
          class imagenMapper extends Mapper{  
+
+
+    public function getImagen($entrada_entrada_id=3){
+    $stmt = $this->db->prepare("SELECT imagen_tipo, imagen FROM imagen where entrada_entrada_id = ? "); 
+    $stmt->execute(array($entrada_entrada_id)); 
+    $stmt->bindColumn(1, $tipo, PDO::PARAM_STR, 256);
+    $stmt->bindColumn(2, $lob, PDO::PARAM_LOB);
+    $stmt->fetch(PDO::FETCH_BOUND);
+    header("Content-Type: $tipo");
+    print $lob;
+    }
+
+
   public function listarimagen() {  
 
 						$sql = "SELECT imagen_id, imagen, imagen_tipo, entrada_entrada_id FROM imagen" ;  

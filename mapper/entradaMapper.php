@@ -8,7 +8,8 @@
 
             public function getEntradaByEnlace($enlace)
             {
-                $sql = "SELECT e.`entrada_titulo` AS 'titulo',
+                $sql = "SELECT e.`entrada_id` AS 'id',
+                               e.`entrada_titulo` AS 'titulo',
                                e.`entrada_contenido` AS 'contenido',
                                e.`entrada_enlace` AS 'enlace',
                                u.`username` AS 'autor',
@@ -28,6 +29,7 @@
 
                 
                 $entrada = new entrada();
+                $entrada->setentrada_id($result['id']); 
                 $entrada->setentrada_titulo($result['titulo']); 
                 $entrada->setentrada_contenido($result['contenido']) ; 
                 $entrada->setentrada_enlace($result['enlace']) ; 

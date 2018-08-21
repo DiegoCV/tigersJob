@@ -3,7 +3,7 @@
  private $imagen_id ; 
  private $imagen ; 
  private $imagen_tipo ; 
- private $entrada_entrada_id ; 
+ private $entrada_entrada_id; 
   public function __construct(array $data = null) { 
  if (!is_null($data)) { 
 

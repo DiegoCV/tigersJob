@@ -6,6 +6,7 @@ class Dispatcher {
       private $action;
       private $vista;
 
+
      public function __construct($router) {
       $this->controller = 'default'; 
       $this->action = 'error'; 
@@ -21,9 +22,15 @@ class Dispatcher {
         $entradaController = new entradaController();
         $this->direccionarNoticia($entradaController->getEntradaByEnlace($router[2]));
       }else{
-      $this->controller = $router[1]."Controller"; 
-      $this->action = $router[2]; 
-      $this->direccionar(); 
+        if ($router[1]="imagen") {
+          $this->controller = $router[1]."Controller"; 
+          $this->action = $router[2];
+          $this->direccionarImg($router[3]); 
+        }else{
+        $this->controller = $router[1]."Controller"; 
+        $this->action = $router[2]; 
+        $this->direccionar(); 
+        }
       }
     }
   } 
@@ -52,6 +59,15 @@ class Dispatcher {
            } else { 
                    throw new Exception( "Action not callable $action" ); 
            } 
+     }
+
+     public function direccionarImg($id)
+     {
+       $ruta = getcwd();         
+           $controllerLocation = $ruta . '\controller\imagenController.php'; 
+           include_once $controllerLocation;
+           $img = new imagenController();
+           $img->getImagen(trim($id));
      }
 
      public function direccionarVista(){

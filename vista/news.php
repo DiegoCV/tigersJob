@@ -148,7 +148,8 @@
                   </div>
                   <div class="col-lg-8">
                      <div class="row">
-                        <div class="col-12"><img class="radius-tr-secondary radius-tl-secondary" src=<?php $this->way->rutaNoticias("assets/images/season.jpg"); ?> alt=""></div>
+                        <div class="col-12"><img class="radius-tr-secondary radius-tl-secondary" 
+                           src=<?php $this->way->rutaImg($this->datos['entrada']->getentrada_id());?>  alt=""></div>
                         <div class="col-12">
                            <div class="background-white p-5 radius-secondary">
                              <?php echo $this->datos['entrada']->getentrada_contenido();?>

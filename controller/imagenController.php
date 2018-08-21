@@ -15,6 +15,11 @@ class imagenController{
         $imagenMapper = new imagenMapper();
         var_dump($imagenMapper->crearimagen($imagen));
 	}
+
+    public function getImagen($entrada_entrada_id){
+        $imagenMapper = new imagenMapper();
+        $imagenMapper->getImagen($entrada_entrada_id);
+    }
 	public function listar(){;
 		$imagenMapper = new imagenMapper();
 		$imagen = $imagenMapper->listarimagen();

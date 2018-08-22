@@ -1,3 +1,10 @@
+<?php
+/**
+  echo '<script language="javascript">';
+echo 'alert("$route")';
+echo '</script>';
+*/
+?>
 <!DOCTYPE html>
 <html lang="en-US">
 <!-- Mirrored from markup.themewagon.com/tryelixir/index--header-selfhosted-video.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jul 2018 00:04:23 GMT -->
@@ -13,35 +20,35 @@
   <!--  -->
   <!--    Favicons-->
   <!--    =============================================-->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
-  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicons/favicon.ico">
-  <link rel="manifest" href="assets/images/favicons/manifest.html">
-  <link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileImage" content="assets/images/favicons/mstile-150x150.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="vista/assets/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="vista/assets/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="vista/assets/images/favicons/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/x-icon" href="vista/assets/images/favicons/favicon.ico">
+  <link rel="manifest" href="vista/assets/images/favicons/manifest.html">
+  <link rel="mask-icon" href="vista/assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileImage" content="vista/assets/images/favicons/mstile-150x150.png">
   <meta name="theme-color" content="#ffffff">
   <!--  -->
   <!--    Stylesheets-->
   <!--    =============================================-->
   <!-- Default stylesheets-->
-  <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vista/assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Template specific stylesheets-->
-  <link href="assets/lib/loaders.css/loaders.min.css" rel="stylesheet">
+  <link href="vista/assets/lib/loaders.css/loaders.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,600,700,800" rel="stylesheet">
-  <link href="assets/lib/iconsmind/iconsmind.css" rel="stylesheet">
+  <link href="vista/assets/lib/iconsmind/iconsmind.css" rel="stylesheet">
   <link href="../../code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
-  <link href="assets/lib/hamburgers/dist/hamburgers.min.css" rel="stylesheet">
-  <link href="assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
-  <link href="assets/lib/remodal/dist/remodal.css" rel="stylesheet">
-  <link href="assets/lib/remodal/dist/remodal-default-theme.css" rel="stylesheet">
-  <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
-  <link href="assets/lib/lightbox2/dist/css/lightbox.css" rel="stylesheet">
+  <link href="vista/assets/lib/hamburgers/dist/hamburgers.min.css" rel="stylesheet">
+  <link href="vista/assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="vista/assets/lib/owl.carousel/dist/vista/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="vista/assets/lib/owl.carousel/dist/vista/assets/owl.theme.default.min.css" rel="stylesheet">
+  <link href="vista/assets/lib/remodal/dist/remodal.css" rel="stylesheet">
+  <link href="vista/assets/lib/remodal/dist/remodal-default-theme.css" rel="stylesheet">
+  <link href="vista/assets/lib/flexslider/flexslider.css" rel="stylesheet">
+  <link href="vista/assets/lib/lightbox2/dist/css/lightbox.css" rel="stylesheet">
   <!-- Main stylesheet and color file-->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/custom.css" rel="stylesheet">
+  <link href="vista/assets/css/style.css" rel="stylesheet">
+  <link href="vista/assets/css/custom.css" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target=".inner-link" data-offset="60">
@@ -61,16 +68,16 @@
     <div class="znav-white znav-container sticky-top navbar-elixir" id="znav-container">
       <div class="container">
         <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand overflow-hidden pr-3" href="index-2.html"><img src="assets/images/logo-dark.png" alt="" /></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          <a class="navbar-brand overflow-hidden pr-3" href="index-2.html"><img src="vista/assets/images/logo-dark.png" alt="" /></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><div class="hamburger hamburger--emphatic"><div class="hamburger-box"><div class="hamburger-inner"></div></div></div></button>
           <div
             class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav fs-0 fw-700">
               <li>
-                <a href="index.html">Home</a>
+                <a href="index">Home</a>
               </li>
               <li>               
-                <a href="services.html">empresa</a>                
+                <a href="services">empresa</a>                
               </li>
               <li>
                 <a href="empleos.html">empleos</a> 
@@ -88,7 +95,7 @@
     </div>
     <section class="color-white py-0" id="header-video">
       <div>
-        <div class="background-holder" style="background-image:url(assets/images/video-1.html);"><video autoplay="autoplay" loop="loop" muted="muted"><source src="assets/videos/morning-routine/video.webm" type="video/webm"/><source src="assets/videos/morning-routine/video.mp4" type="video/mp4"/><source src="assets/videos/morning-routine/video.html" type="video/ogv"/></video></div>
+        <div class="background-holder" style="background-image:url(vista/assets/images/video-1.html);"><video autoplay="autoplay" loop="loop" muted="muted"><source src="vista/assets/videos/morning-routine/video.webm" type="video/webm"/><source src="vista/assets/videos/morning-routine/video.mp4" type="video/mp4"/><source src="vista/assets/videos/morning-routine/video.html" type="video/ogv"/></video></div>
         <!--/.background-holder-->
         <div class="container" data-zanim-timeline="{}" data-zanim-trigger="scroll">
           <div class="row h-full py-8 align-items-center" data-inertia='{"weight":1.5}'>
@@ -119,7 +126,7 @@
         <div class="row no-gutters pos-relative mt-6">
           <div class="elixir-caret d-none d-lg-block"></div>
           <div class="col-lg-6 py-3 py-lg-0 mb-0" style="min-height:400px;">
-            <div class="background-holder radius-tl-secondary radius-tr-secondary radius-tr-lg-0" style="background-image:url(assets/images/vigilanciaFijaMovil.png);"></div>
+            <div class="background-holder radius-tl-secondary radius-tr-secondary radius-tr-lg-0" style="background-image:url(vista/assets/images/vigilanciaFijaMovil.png);"></div>
             <!--/.background-holder-->
           </div>
           <div class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 background-white radius-bl-secondary radius-bl-lg-0 radius-br-secondary radius-br-lg-0 radius-tr-lg-secondary">
@@ -142,7 +149,7 @@
         <div class="row no-gutters pos-relative mt-4 mt-lg-0">
           <div class="elixir-caret d-none d-lg-block"></div>
           <div class="col-lg-6 py-3 py-lg-0 mb-0 order-lg-2" style="min-height:400px;">
-            <div class="background-holder radius-tl-secondary radius-tl-lg-0 radius-tr-secondary radius-tr-lg-0" style="background-image:url(assets/images/servicioEscoltas.png);"></div>
+            <div class="background-holder radius-tl-secondary radius-tl-lg-0 radius-tr-secondary radius-tr-lg-0" style="background-image:url(vista/assets/images/servicioEscoltas.png);"></div>
             <!--/.background-holder-->
           </div>
           <div class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 background-white radius-bl-secondary radius-bl-lg-0 radius-br-secondary radius-br-lg-0">
@@ -165,7 +172,7 @@
         <div class="row no-gutters pos-relative mt-4 mt-lg-0">
           <div class="elixir-caret d-none d-lg-block"></div>
           <div class="col-lg-6 py-3 py-lg-0 mb-0" style="min-height:400px;">
-            <div class="background-holder radius-tl-secondary radius-tr-secondary radius-tr-lg-0 radius-tl-lg-0 radius-bl-0 radius-bl-lg-secondary" style="background-image:url(assets/images/vigilanciaConArmaSinArma.png);"></div>
+            <div class="background-holder radius-tl-secondary radius-tr-secondary radius-tr-lg-0 radius-tl-lg-0 radius-bl-0 radius-bl-lg-secondary" style="background-image:url(vista/assets/images/vigilanciaConArmaSinArma.png);"></div>
             <!--/.background-holder-->
           </div>
           <div class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 background-white radius-bl-secondary radius-bl-lg-0 radius-br-secondary">
@@ -188,7 +195,7 @@
         <div class="row no-gutters pos-relative mt-4 mt-lg-0">
           <div class="elixir-caret d-none d-lg-block"></div>
           <div class="col-lg-6 py-3 py-lg-0 mb-0 order-lg-2" style="min-height:400px;">
-            <div class="background-holder radius-tl-secondary radius-tl-lg-0 radius-tr-secondary radius-tr-lg-0" style="background-image:url(assets/images/mediosTecnologicos.png);"></div>
+            <div class="background-holder radius-tl-secondary radius-tl-lg-0 radius-tr-secondary radius-tr-lg-0" style="background-image:url(vista/assets/images/mediosTecnologicos.png);"></div>
             <!--/.background-holder-->
           </div>
           <div class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 background-white radius-bl-secondary radius-bl-lg-0 radius-br-secondary radius-br-lg-0">
@@ -211,7 +218,7 @@
         <div class="row no-gutters pos-relative mt-4 mt-lg-0">
           <div class="elixir-caret d-none d-lg-block"></div>
           <div class="col-lg-6 py-3 py-lg-0 mb-0" style="min-height:400px;">
-            <div class="background-holder radius-tl-secondary radius-tr-secondary radius-tr-lg-0 radius-tl-lg-0 radius-bl-0 radius-bl-lg-secondary" style="background-image:url(assets/images/supervision.png);"></div>
+            <div class="background-holder radius-tl-secondary radius-tr-secondary radius-tr-lg-0 radius-tl-lg-0 radius-bl-0 radius-bl-lg-secondary" style="background-image:url(vista/assets/images/supervision.png);"></div>
             <!--/.background-holder-->
           </div>
           <div class="col-lg-6 px-lg-5 py-lg-6 p-4 my-lg-0 background-white radius-bl-secondary radius-bl-lg-0 radius-br-secondary">
@@ -369,7 +376,7 @@
         </div>
         <div class="row">
           <div class="col-sm-6 col-lg-4">
-            <div class="background-white pb-4 h-100 radius-secondary"><img class="mb-4 radius-tr-secondary radius-tl-secondary" src="assets/images/portrait-3.jpg" alt="Profile Picture" />
+            <div class="background-white pb-4 h-100 radius-secondary"><img class="mb-4 radius-tr-secondary radius-tl-secondary" src="vista/assets/images/portrait-3.jpg" alt="Profile Picture" />
               <div class="px-4" data-zanim-timeline="{}"
                 data-zanim-trigger="scroll">
                 <div class="overflow-hidden">
@@ -385,7 +392,7 @@
             </div>
           </div>
           <div class="col-sm-6 col-lg-4 mt-4 mt-sm-0">
-            <div class="background-white pb-4 h-100 radius-secondary"><img class="mb-4 radius-tr-secondary radius-tl-secondary" src="assets/images/portrait-4.jpg" alt="Profile Picture" />
+            <div class="background-white pb-4 h-100 radius-secondary"><img class="mb-4 radius-tr-secondary radius-tl-secondary" src="vista/assets/images/portrait-4.jpg" alt="Profile Picture" />
               <div class="px-4" data-zanim-timeline="{}"
                 data-zanim-trigger="scroll">
                 <div class="overflow-hidden">
@@ -401,7 +408,7 @@
             </div>
           </div>
           <div class="col-sm-6 col-lg-4 mt-4 mt-lg-0">
-            <div class="background-white pb-4 h-100 radius-secondary"><img class="mb-4 radius-tr-secondary radius-tl-secondary" src="assets/images/portrait-5.jpg" alt="Profile Picture" />
+            <div class="background-white pb-4 h-100 radius-secondary"><img class="mb-4 radius-tr-secondary radius-tl-secondary" src="vista/assets/images/portrait-5.jpg" alt="Profile Picture" />
               <div class="px-4" data-zanim-timeline="{}"
                 data-zanim-trigger="scroll">
                 <div class="overflow-hidden">
@@ -417,7 +424,7 @@
             </div>
           </div>
           <div class="col-sm-6 col-lg-4 mt-4">
-            <div class="background-white pb-4 h-100 radius-secondary"><img class="mb-4 radius-tr-secondary radius-tl-secondary" src="assets/images/portrait-6.jpg" alt="Profile Picture" />
+            <div class="background-white pb-4 h-100 radius-secondary"><img class="mb-4 radius-tr-secondary radius-tl-secondary" src="vista/assets/images/portrait-6.jpg" alt="Profile Picture" />
               <div class="px-4" data-zanim-timeline="{}"
                 data-zanim-trigger="scroll">
                 <div class="overflow-hidden">
@@ -433,7 +440,7 @@
             </div>
           </div>
           <div class="col-sm-6 col-lg-4 mt-4">
-            <div class="background-white pb-4 h-100 radius-secondary"><img class="mb-4 radius-tr-secondary radius-tl-secondary" src="assets/images/portrait-7.jpg" alt="Profile Picture" />
+            <div class="background-white pb-4 h-100 radius-secondary"><img class="mb-4 radius-tr-secondary radius-tl-secondary" src="vista/assets/images/portrait-7.jpg" alt="Profile Picture" />
               <div class="px-4" data-zanim-timeline="{}"
                 data-zanim-trigger="scroll">
                 <div class="overflow-hidden">
@@ -449,7 +456,7 @@
             </div>
           </div>
           <div class="col-sm-6 col-lg-4 mt-4">
-            <div class="background-white pb-4 h-100 radius-secondary"><img class="mb-4 radius-tr-secondary radius-tl-secondary" src="assets/images/portrait-1.jpg" alt="Profile Picture" />
+            <div class="background-white pb-4 h-100 radius-secondary"><img class="mb-4 radius-tr-secondary radius-tl-secondary" src="vista/assets/images/portrait-1.jpg" alt="Profile Picture" />
               <div class="px-4" data-zanim-timeline="{}"
                 data-zanim-trigger="scroll">
                 <div class="overflow-hidden">
@@ -470,7 +477,7 @@
       <!--/.container-->
     </section>
     <section>
-      <div class="background-holder overlay overlay-elixir" style="background-image:url(assets/images/background-15.jpg);"></div>
+      <div class="background-holder overlay overlay-elixir" style="background-image:url(vista/assets/images/background-15.jpg);"></div>
       <!--/.background-holder-->
       <div class="container">
         <div class="row">
@@ -511,7 +518,7 @@
           <div class="col">
             <div class="owl-carousel owl-theme owl-dot-round" data-options='{"nav":true,"dots":false,"loop":true,"autoplay":true,"autoplayHoverPause":true,"items":1}'>
               <div class="row px-lg-8">
-                <div class="col-4 col-md-3 mx-auto"><img class="radius-secondary mx-auto" src="assets/images/client1.png" alt="Member" style="width: auto;" /></div>
+                <div class="col-4 col-md-3 mx-auto"><img class="radius-secondary mx-auto" src="vista/assets/images/client1.png" alt="Member" style="width: auto;" /></div>
                 <div class="col-md-9 ml-auto mt-4 mt-md-0 px-4 px-sm-3">
                   <p class="lead fw-400">Their work on our website and Internet marketing has made a significant different to our business. We’ve seen a 425% increase in quote
                     requests from the website which has been pretty remarkable – but I’d always like to see more!</p>
@@ -520,7 +527,7 @@
                 </div>
               </div>
               <div class="row px-lg-8">
-                <div class="col-4 col-md-3 mx-auto"><img class="radius-secondary mx-auto" src="assets/images/client2.png" alt="Member" style="width: auto;" /></div>
+                <div class="col-4 col-md-3 mx-auto"><img class="radius-secondary mx-auto" src="vista/assets/images/client2.png" alt="Member" style="width: auto;" /></div>
                 <div class="col-md-9 ml-auto mt-4 mt-md-0 px-4 px-sm-3">
                   <p class="lead fw-400">Writing case studies was a daunting task for us. We didn’t know where to begin or what questions to ask, and clients never seemed to
                     follow through when we asked. Elixir team did everything – with almost no time or effort for me!</p>
@@ -529,7 +536,7 @@
                 </div>
               </div>
               <div class="row px-lg-8">
-                <div class="col-4 col-md-3 mx-auto"><img class="radius-secondary mx-auto" src="assets/images/client3.png" alt="Member" style="width: auto;" /></div>
+                <div class="col-4 col-md-3 mx-auto"><img class="radius-secondary mx-auto" src="vista/assets/images/client3.png" alt="Member" style="width: auto;" /></div>
                 <div class="col-md-9 ml-auto mt-4 mt-md-0 px-4 px-sm-3">
                   <p class="lead fw-400">As a sales gamification company, we were skeptical to work with a consultant to optimize our sales emails, but Elixir was highly recommended
                     by many other Y-Combinator startups we knew. Elixir helped us run a ~6 week email campaign.</p>
@@ -547,12 +554,12 @@
     <section class="background-10 py-6">
       <div class="container">
         <div class="row align-items-center" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-          <div class="col-4 col-md-2 my-3 overflow-hidden"><img src="assets/images/partner/logo2.png" alt="" data-zanim="{}" /></div>
-          <div class="col-4 col-md-2 my-3 overflow-hidden"><img src="assets/images/partner/logo1.png" alt="" data-zanim="{}" /></div>
-          <div class="col-4 col-md-2 my-3 overflow-hidden"><img src="assets/images/partner/logo6.png" alt="" data-zanim="{}" /></div>
-          <div class="col-4 col-md-2 my-3 overflow-hidden"><img src="assets/images/partner/logo3.png" alt="" data-zanim="{}" /></div>
-          <div class="col-4 col-md-2 my-3 overflow-hidden"><img src="assets/images/partner/logo5.png" alt="" data-zanim="{}" /></div>
-          <div class="col-4 col-md-2 my-3 overflow-hidden"><img src="assets/images/partner/logo4.png" alt="" data-zanim="{}" /></div>
+          <div class="col-4 col-md-2 my-3 overflow-hidden"><img src="vista/assets/images/partner/logo2.png" alt="" data-zanim="{}" /></div>
+          <div class="col-4 col-md-2 my-3 overflow-hidden"><img src="vista/assets/images/partner/logo1.png" alt="" data-zanim="{}" /></div>
+          <div class="col-4 col-md-2 my-3 overflow-hidden"><img src="vista/assets/images/partner/logo6.png" alt="" data-zanim="{}" /></div>
+          <div class="col-4 col-md-2 my-3 overflow-hidden"><img src="vista/assets/images/partner/logo3.png" alt="" data-zanim="{}" /></div>
+          <div class="col-4 col-md-2 my-3 overflow-hidden"><img src="vista/assets/images/partner/logo5.png" alt="" data-zanim="{}" /></div>
+          <div class="col-4 col-md-2 my-3 overflow-hidden"><img src="vista/assets/images/partner/logo4.png" alt="" data-zanim="{}" /></div>
         </div>
         <!--/.row-->
       </div>
@@ -569,7 +576,7 @@
         </div>
         <div class="row mt-lg-6">
           <div class="col-md-6 col-lg-4 py-0 mt-4 mt-lg-0">
-            <div class="background-white pb-4 h-100 radius-secondary"><img class="w-100 radius-tr-secondary radius-tl-secondary" src="assets/images/9.jpg" alt="Featured Image" />
+            <div class="background-white pb-4 h-100 radius-secondary"><img class="w-100 radius-tr-secondary radius-tl-secondary" src="vista/assets/images/9.jpg" alt="Featured Image" />
               <div class="px-4 pt-4" data-zanim-timeline="{}"
                 data-zanim-trigger="scroll">
                 <div class="overflow-hidden">
@@ -590,7 +597,7 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4 py-0 mt-4 mt-lg-0">
-            <div class="background-white pb-4 h-100 radius-secondary"><img class="w-100 radius-tr-secondary radius-tl-secondary" src="assets/images/10.jpg" alt="Featured Image" />
+            <div class="background-white pb-4 h-100 radius-secondary"><img class="w-100 radius-tr-secondary radius-tl-secondary" src="vista/assets/images/10.jpg" alt="Featured Image" />
               <div class="px-4 pt-4" data-zanim-timeline="{}"
                 data-zanim-trigger="scroll">
                 <div class="overflow-hidden">
@@ -611,7 +618,7 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4 py-0 mt-4 mt-lg-0">
-            <div class="background-white pb-4 h-100 radius-secondary"><img class="w-100 radius-tr-secondary radius-tl-secondary" src="assets/images/14.jpg" alt="Featured Image" />
+            <div class="background-white pb-4 h-100 radius-secondary"><img class="w-100 radius-tr-secondary radius-tl-secondary" src="vista/assets/images/14.jpg" alt="Featured Image" />
               <div class="px-4 pt-4" data-zanim-timeline="{}"
                 data-zanim-trigger="scroll">
                 <div class="overflow-hidden">
@@ -718,7 +725,7 @@
       <div class="container">
         <div class="row align-items-center" style="opacity: 0.85;">
           <div class="col-sm-3 text-sm-left">
-            <a href="index-2.html"><img src="assets/images/logo-light.png" alt="" /></a>
+            <a href="index-2.html"><img src="vista/assets/images/logo-light.png" alt="" /></a>
           </div>
           <div class="col-sm-6 mt-3 mt-sm-0">
             <p class="color-white lh-6 mb-0 fw-600">&copy; Copyright 2018 Elixir Inc.</p>
@@ -734,16 +741,16 @@
   <!--    JavaScripts-->
   <!--    =============================================-->
   <script src="../../cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-  <script src="assets/lib/jquery/dist/jquery.min.js"></script>
+  <script src="vista/assets/lib/jquery/dist/jquery.min.js"></script>
   <script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
     crossorigin="anonymous"></script>
-  <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="assets/lib/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/lib/gsap/src/minified/TweenMax.min.js"></script>
-  <script src="assets/lib/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
-  <script src="assets/lib/CustomEase.min.js"></script>
-  <script src="assets/js/config.js"></script>
-  <script src="assets/js/zanimation.js"></script>
+  <script src="vista/assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="vista/assets/lib/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="vista/assets/lib/gsap/src/minified/TweenMax.min.js"></script>
+  <script src="vista/assets/lib/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
+  <script src="vista/assets/lib/CustomEase.min.js"></script>
+  <script src="vista/assets/js/config.js"></script>
+  <script src="vista/assets/js/zanimation.js"></script>
   <!-- Hotjar Tracking Code for http://markup.themewagon.com/tryelixir-->
   <script>
     (function(h,o,t,j,a,r){
@@ -763,12 +770,12 @@
     gtag('js', new Date());
     gtag('config', 'UA-76729372-5');
   </script>
-  <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
-  <script src="assets/lib/remodal/dist/remodal.js"></script>
-  <script src="assets/lib/lightbox2/dist/js/lightbox.js"></script>
-  <script src="assets/lib/flexslider/jquery.flexslider-min.js"></script>
-  <script src="assets/js/core.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="vista/assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+  <script src="vista/assets/lib/remodal/dist/remodal.js"></script>
+  <script src="vista/assets/lib/lightbox2/dist/js/lightbox.js"></script>
+  <script src="vista/assets/lib/flexslider/jquery.flexslider-min.js"></script>
+  <script src="vista/assets/js/core.js"></script>
+  <script src="vista/assets/js/main.js"></script>
 </body>
 <!-- Mirrored from markup.themewagon.com/tryelixir/index--header-selfhosted-video.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jul 2018 00:06:47 GMT -->
 

@@ -12,11 +12,9 @@ class Dispatcher {
       $this->action = 'error'; 
 
   if(empty($router[0]) && empty($router[1])){
-    header('location:vista/index.php');
-    }else if(empty($router[0]) && !empty($router[1]) && empty($router[2])){ 
-      //$this->vista = substr($router[1],0,strlen($router[1])-4);  
-      $this->vista = $router[1];  
-      $this->direccionarVista();
+    $this->direccionarVista("index");
+    }else if(empty($router[0]) && !empty($router[1]) && empty($router[2])){  
+      $this->direccionarVista($router[1]);
     }else{
       if($router[1] == 'noticias'){
         $entradaController = new entradaController();
@@ -39,7 +37,7 @@ class Dispatcher {
      {
        $ruta = getcwd();
            
-           $controllerLocation = $ruta . '\controller\\' . $this->controller . '.php'; 
+           $controllerLocation = $ruta . '/controller/' . $this->controller . '.php'; 
 
            if( file_exists( $controllerLocation ) ) { 
                  include_once( $controllerLocation ); 
@@ -64,14 +62,14 @@ class Dispatcher {
      public function direccionarImg($id)
      {
        $ruta = getcwd();         
-           $controllerLocation = $ruta . '\controller\imagenController.php'; 
+           $controllerLocation = $ruta . '/controller/imagenController.php'; 
            include_once $controllerLocation;
            $img = new imagenController();
            $img->getImagen(trim($id));
      }
 
-     public function direccionarVista(){
-      switch ($this->vista) {
+     public function direccionarVista($vista){
+      switch ($vista) {
         case 'noticias':
           $render = new Render('newsroom'); 
           break;
@@ -81,7 +79,7 @@ class Dispatcher {
           break;
         
         default:
-          $render = new Render($this->vista); 
+          $render = new Render($vista); 
           break;
       }
         $render->mostrar(); 

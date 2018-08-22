@@ -1,5 +1,5 @@
 <?php
-include_once 'way.php';
+include_once 'Way.php';
 class Render {
     private $vista;
     private $datos;
@@ -13,11 +13,11 @@ class Render {
 
     public function mostrar() {
         $ruta = getcwd();
-        $controllerLocation = $ruta . '\vista\\' . $this->vista . '.php';
+        $controllerLocation = $ruta . '/vista/' . $this->vista . '.php';
         if (file_exists($controllerLocation)) {
-           include_once $controllerLocation;
+          include_once $controllerLocation;
         } else {
-            $controllerLocation = $ruta . '\vista\404.php';
+            $controllerLocation = $ruta . '/vista/404.php';
             include_once $controllerLocation;
         }
     }

@@ -2,7 +2,7 @@
 
             include_once dirname(__FILE__) . '\Mapper.php';
 
-            include_once substr(getcwd(), 0,26).'\entity\user.php';
+            include_once dirname(__FILE__).'\entity\user.php';
 
          class userMapper extends Mapper{  
   public function listaruser() {  

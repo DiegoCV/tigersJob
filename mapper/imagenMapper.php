@@ -1,8 +1,9 @@
+
 <?php 
 
             include_once dirname(__FILE__) . '\Mapper.php';
 
-            include_once substr(getcwd(), 0,26).'\entity\imagen.php';
+            include_once dirname(__FILE__).'\entity\imagen.php';
 
          class imagenMapper extends Mapper{  
 

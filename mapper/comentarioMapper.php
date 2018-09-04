@@ -2,7 +2,7 @@
 
             include_once dirname(__FILE__) . '\Mapper.php';
 
-            include_once substr(getcwd(), 0,26).'\entity\comentario.php';
+            include_once dirname(__FILE__).'\entity\comentario.php';
 
          class comentarioMapper extends Mapper{  
   public function listarcomentario() {  

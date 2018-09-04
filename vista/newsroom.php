@@ -1,3 +1,12 @@
+<?php
+include dirname(__FILE__,2).'/entradaController.php';
+
+$var = new entradaController();
+
+echo $var->getTotalEntradas();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en-US">
 <!-- Mirrored from markup.themewagon.com/tryelixir/newsroom.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jul 2018 00:07:32 GMT -->

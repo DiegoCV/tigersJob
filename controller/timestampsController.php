@@ -1,7 +1,7 @@
 <?php
-include_once substr(getcwd(), 0,26).'\entity\timestamps.php';
-include_once substr(getcwd(), 0,26).'\mapper\timestampsMapper.php';
-include_once substr(getcwd(), 0,26).'\core\Render.php';
+include_once dirname(__FILE__).'\entity\timestamps.php';
+include_once dirname(__FILE__).'\mapper\timestampsMapper.php';
+include_once dirname(__FILE__).'\core\Render.php';
 
 class timestampsController{
 

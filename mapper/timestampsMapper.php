@@ -2,7 +2,7 @@
 
             include_once dirname(__FILE__) . '\Mapper.php';
 
-            include_once substr(getcwd(), 0,26).'\entity\timestamps.php';
+            include_once dirname(__FILE__).'\entity\timestamps.php';
 
          class timestampsMapper extends Mapper{  
   public function listartimestamps() {  

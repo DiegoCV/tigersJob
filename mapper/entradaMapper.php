@@ -1,8 +1,8 @@
 <?php 
 
-            include_once dirname(__FILE__) . '\Mapper.php';
+            include_once 'Mapper.php';
 
-            include_once substr(getcwd(), 0,26).'\entity\entrada.php';
+            include_once dirname(__FILE__,2).'\entity\entrada.php';
 
          class entradaMapper extends Mapper{  
 
@@ -55,7 +55,24 @@
 
 				        return $results; 
 
-			    	}    public function crearentrada(entrada $entrada) {
+			    	}  
+
+public function getTotalEntradas()
+  {
+      $sql = "SELECT COUNT(*) AS total FROM entrada" ;    
+
+                        foreach ($this->db->query($sql) as $fila) { 
+
+                           return $fila['total']; 
+
+                        } 
+  return 0;
+  }  
+
+
+
+
+                    public function crearentrada(entrada $entrada) {
 /**$entrada_titulo = $entrada->getentrada_titulo(); 
 $entrada_contenido = $entrada->getentrada_contenido(); 
 $entrada_enlace = $entrada->getentrada_enlace(); 

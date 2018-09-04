@@ -1,8 +1,8 @@
 <?php
-include_once substr(getcwd(), 0,26).'\entity\entrada.php';
-include_once substr(getcwd(), 0,26).'\entity\imagen.php';
-include_once substr(getcwd(), 0,26).'\mapper\entradaMapper.php';
-include_once substr(getcwd(), 0,26).'\core\Render.php';
+include_once dirname(__FILE__,2).'\entity\entrada.php';
+include_once dirname(__FILE__,2).'\entity\imagen.php';
+include_once dirname(__FILE__,2).'\mapper\entradaMapper.php';
+include_once dirname(__FILE__,2).'\core\Render.php';
 
 class entradaController{
 
@@ -110,7 +110,15 @@ function subir_fichero($directorio_destino, $nombre_fichero)
         $entradaMapper = new entradaMapper();
         return $entradaMapper->getEntradaByEnlace($enlace);
     }
+
+      public function getTotalEntradas()
+    {
+        $entradaMapper = new entradaMapper();
+        return $entradaMapper->getTotalEntradas();
+    }
     
+    
+
 
 	public function actualizar(){
 

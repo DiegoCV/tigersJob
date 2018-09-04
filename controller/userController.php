@@ -1,7 +1,7 @@
 <?php
-include_once substr(getcwd(), 0,26).'\entity\user.php';
-include_once substr(getcwd(), 0,26).'\mapper\userMapper.php';
-include_once substr(getcwd(), 0,26).'\core\Render.php';
+include_once dirname(__FILE__).'\entity\user.php';
+include_once dirname(__FILE__).'\mapper\userMapper.php';
+include_once dirname(__FILE__).'\core\Render.php';
 
 class userController{
 

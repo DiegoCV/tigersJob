@@ -1,6 +1,6 @@
 <?php
 include_once 'Render.php';
-include_once substr(getcwd(), 0,26).'/controller/entradaController.php';
+include_once dirname(__FILE__,2).'/controller/entradaController.php';
 class Dispatcher { 
       private $controller;
       private $action;

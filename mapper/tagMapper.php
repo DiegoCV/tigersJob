@@ -2,7 +2,7 @@
 
             include_once dirname(__FILE__) . '\Mapper.php';
 
-            include_once substr(getcwd(), 0,26).'\entity\tag.php';
+            include_once dirname(__FILE__).'\entity\tag.php';
 
          class tagMapper extends Mapper{  
   public function listartag() {  

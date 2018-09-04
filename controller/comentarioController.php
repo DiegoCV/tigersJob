@@ -1,7 +1,7 @@
 <?php
-include_once substr(getcwd(), 0,26).'\entity\comentario.php';
-include_once substr(getcwd(), 0,26).'\mapper\comentarioMapper.php';
-include_once substr(getcwd(), 0,26).'\core\Render.php';
+include_once dirname(__FILE__).'\entity\comentario.php';
+include_once dirname(__FILE__).'\mapper\comentarioMapper.php';
+include_once dirname(__FILE__).'\core\Render.php';
 
 class comentarioController{
 

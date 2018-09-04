@@ -1,7 +1,7 @@
 <?php
-include_once substr(getcwd(), 0,26).'\entity\imagen.php';
-include_once substr(getcwd(), 0,26).'\mapper\imagenMapper.php';
-include_once substr(getcwd(), 0,26).'\core\Render.php';
+include_once dirname(__FILE__).'\entity\imagen.php';
+include_once dirname(__FILE__).'\mapper\imagenMapper.php';
+include_once dirname(__FILE__).'\core\Render.php';
 
 class imagenController{
 

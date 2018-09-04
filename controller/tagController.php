@@ -1,7 +1,7 @@
 <?php
-include_once substr(getcwd(), 0,26).'\entity\tag.php';
-include_once substr(getcwd(), 0,26).'\mapper\tagMapper.php';
-include_once substr(getcwd(), 0,26).'\core\Render.php';
+include_once dirname(__FILE__).'\entity\tag.php';
+include_once dirname(__FILE__).'\mapper\tagMapper.php';
+include_once dirname(__FILE__).'\core\Render.php';
 
 class tagController{
 

@@ -1,7 +1,7 @@
 <?php
-include_once substr(getcwd(), 0,26).'\entity\tag_has_entrada.php';
-include_once substr(getcwd(), 0,26).'\mapper\tag_has_entradaMapper.php';
-include_once substr(getcwd(), 0,26).'\core\Render.php';
+include_once dirname(__FILE__).'\entity\tag_has_entrada.php';
+include_once dirname(__FILE__).'\mapper\tag_has_entradaMapper.php';
+include_once dirname(__FILE__).'\core\Render.php';
 
 class tag_has_entradaController{
 

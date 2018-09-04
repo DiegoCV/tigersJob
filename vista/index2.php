@@ -1,13 +1,7 @@
-<?php
-/**
-  echo '<script language="javascript">';
-echo 'alert("$route")';
-echo '</script>';
-*/
-?>
+
 <!DOCTYPE html>
 <html lang="en-US">
-<!-- Mirrored from markup.themewagon.com/tryelixir/index--header-selfhosted-video.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jul 2018 00:04:23 GMT -->
+<!-- Mirrored from markup.themewagon.com/tryelixir/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Aug 2018 23:45:59 GMT -->
 
 <head>
   <meta charset="utf-8">
@@ -64,25 +58,21 @@ echo '</script>';
         </div>
       </div>
     </div>
-      
+
+   <?php
+   include 'header_1.php';
+   include 'section-imagenes.php';
+   include 'section-mas-servicios.php';
+   ?>
+   
       
    
-<?php
-include 'header.php';
-include 'section-video.php';
-include 'section-mas-servicios.php';
-?>
 
-      
-      
      <?php
   include 'footer.php';
   ?>
-      
-      
-  
 
-  
+   
   </main>
   <!--  -->
   <!--    JavaScripts-->
@@ -124,6 +114,6 @@ include 'section-mas-servicios.php';
   <script src="vista/assets/js/core.js"></script>
   <script src="vista/assets/js/main.js"></script>
 </body>
-<!-- Mirrored from markup.themewagon.com/tryelixir/index--header-selfhosted-video.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 15 Jul 2018 00:06:47 GMT -->
+<!-- Mirrored from markup.themewagon.com/tryelixir/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Aug 2018 23:47:42 GMT -->
 
 </html>

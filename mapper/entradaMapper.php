@@ -57,6 +57,38 @@
 
 			    	}  
 
+            public function getEntradas($inicio,$fin)
+            {
+              $sql = "SELECT  e.`entrada_id` AS 'id', 
+                              e.`entrada_titulo` AS 'titulo',
+                              SUBSTRING(e.`entrada_contenido`,1,110) AS 'contenido',
+                              e.`entrada_enlace` AS 'enlace',
+                              e.`entrada_autor`AS'autor',
+                              tm.`create_time` AS 'fechaCreacion'
+                    FROM `entrada` e 
+                    INNER JOIN `timestamps` tm
+                    ON(tm.`entrada_entrada_id` = e.`entrada_id`)
+                    ORDER by tm.`create_time` ASC
+                    LIMIT $inicio,$fin";
+
+                    $results = array();  
+
+                foreach ($this->db->query($sql) as $result) { 
+                  $entrada = new entrada();
+                $entrada->setentrada_id($result['id']); 
+                $entrada->setentrada_titulo($result['titulo']); 
+                $entrada->setentrada_contenido($result['contenido']) ; 
+                $entrada->setentrada_enlace($result['enlace']) ; 
+                $entrada->setentrada_autor($result['autor']) ; 
+                $entrada->setfecha($result['fechaCreacion']);
+
+                    array_push($results, $entrada); 
+
+                } 
+
+                return $results; 
+            }
+
 public function getTotalEntradas()
   {
       $sql = "SELECT COUNT(*) AS total FROM entrada" ;    

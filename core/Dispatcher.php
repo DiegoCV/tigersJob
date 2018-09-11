@@ -19,6 +19,10 @@ class Dispatcher {
       if($router[1] == 'noticias'){
         $entradaController = new entradaController();
         $this->direccionarNoticia($entradaController->getEntradaByEnlace($router[2]));
+      }else if ($router[1] == 'entrada') {
+        $this->controller = $router[1]."Controller"; 
+        $this->action = $router[2]; 
+        $this->direccionar(); 
       }else{
         if ($router[1]="imagen") {
           $this->controller = $router[1]."Controller"; 

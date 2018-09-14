@@ -133,8 +133,8 @@
                <div class="row h-full align-items-center">
                   <div class="col-12 px-0">
                      <form enctype="multipart/form-data" method="post" action="entrada/crear">
-                        <input type="text" name="titulo" placeholder="Titulo" />
-                        <input type="text" name="enlace" placeholder="Enlace" />
+                        <input type="text" name="titulo" placeholder="titulo" />
+                        <input type="text" name="enlace" placeholder="enlace" />
                         <textarea name="contenido">Escribe aqui el contenido de la noticia</textarea>
                         <label>Imagen
                         <input id="imagen" name="imagen" type="file" />

@@ -151,7 +151,7 @@
                   <div class="col-lg-8">
                      <div class="row">
                         <div class="col-12"><img class="radius-tr-secondary radius-tl-secondary" 
-                           src=<?php $this->way->rutaImg($this->datos['entrada']->getentrada_id());?>  alt=""></div>
+                           src="../tmp/<?php echo $this->datos['entrada']->getentrada_enlace();?>.jpg" alt="No hay imagen" ></div>
                         <div class="col-12">
                            <div class="background-white p-5 radius-secondary">
                              <?php echo $this->datos['entrada']->getentrada_contenido();?>

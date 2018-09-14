@@ -2,6 +2,7 @@
 include_once dirname(__FILE__,2).'\entity\entrada.php';
 include_once dirname(__FILE__,2).'\entity\imagen.php';
 include_once dirname(__FILE__,2).'\mapper\entradaMapper.php';
+include_once dirname(__FILE__,2).'\mapper\imagenMapper.php';
 include_once dirname(__FILE__,2).'\core\Render.php';
 
 class entradaController{
@@ -13,6 +14,13 @@ class entradaController{
      * La informacion llego por post asumiendo la estructura de las entidades .
      *
      */
+
+    public function b($value='')
+    {
+        $imagenMapper = new imagenMapper();
+        $imagenMapper->getImagen(2);
+    }
+
 	public function crear(){
         // Comprobamos si ha ocurrido un error.
 if (!isset($_FILES["imagen"]) || $_FILES["imagen"]["error"] > 0)
@@ -30,26 +38,32 @@ else
     {
 
         // Tipo de archivo
-        $tipo = $_FILES['imagen']['type'];
+        $tipo = $_FILES['imagen']['type'];  
+        $ruta = "tmp/" .$_POST['enlace'].".".explode("/", $tipo)[1];
+        @move_uploaded_file($_FILES["imagen"]["tmp_name"], $ruta);
         
         //Podríamos utilizar también la siguiente instrucción en lugar de las 3 anteriores.
-        $data = fopen($_FILES['imagen']['tmp_name'], 'rb');
+       // $data = fopen($_FILES['imagen']['tmp_name'], 'rb');
         // Escapamos los caracteres para que se puedan almacenar en la base de datos correctamente.
-
+/**
         //creamos un objeto tipo imagen
         $imagen = new imagen();
         $imagen->setimagen($data);
-        $imagen->setimagen_tipo($tipo);
+        $imagen->setimagen_tipo($tipo);*/
 
         //creamos un objeto tipo entrada
         $entrada = new entrada();
-        $entrada->setimagen($imagen);
+        //$entrada->setimagen($imagen);
+        $entrada->setentrada_titulo($_POST['titulo']); 
+        $entrada->setentrada_contenido($_POST['contenido']) ; 
+        $entrada->setentrada_enlace($_POST['enlace']) ; 
+        $entrada->setentrada_autor("DiegoCV") ; 
 
         //creamos objeto de persistencia y lo agregamos
         $entradaMapper = new entradaMapper();
         $resultado = $entradaMapper->crearentrada($entrada);
 
-        if ($resultado)
+        if ($resultado > 0)
         {
             echo "El archivo ha sido copiado exitosamente.";
         }
@@ -184,9 +198,9 @@ function subir_fichero($directorio_destino, $nombre_fichero)
         $res="";
         foreach ($entradas as $key => $value) {
             $res.='<div class="col-md-6 col-lg-4 py-0 mt-4 mt-lg-0">
-                        <div class="background-white pb-4 h-100 radius-secondary"><img class="w-100 radius-tr-secondary radius-tl-secondary" src="vista/assets/images/9.jpg" alt="Featured Image" />
+                        <div class="background-white pb-4 h-100 radius-secondary"><img class="w-100 radius-tr-secondary radius-tl-secondary" src="tmp/'.$value->getentrada_enlace().'.jpg" alt="Featured Image" />
                             <div class="px-4 pt-4" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-                                <div class="overflow-hidden"><a href="news.html">
+                                <div class="overflow-hidden"><a href="noticias/'.$value->getentrada_enlace().'">
                                     <h5 data-zanim=\'{"delay":0}\'>'.$value->getentrada_titulo().'</h5>
                                     </a></div>
                                 <div class="overflow-hidden">

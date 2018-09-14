@@ -105,23 +105,33 @@ public function getTotalEntradas()
 
 
                     public function crearentrada(entrada $entrada) {
-/**$entrada_titulo = $entrada->getentrada_titulo(); 
-$entrada_contenido = $entrada->getentrada_contenido(); 
-$entrada_enlace = $entrada->getentrada_enlace(); 
-$entrada_autor = $entrada->getentrada_autor(); 
- 
 
-        			$sql = "INSERT INTO entrada (entrada_titulo,entrada_contenido,entrada_enlace,entrada_autor) VALUES ('$entrada_titulo','$entrada_contenido','$entrada_enlace','$entrada_autor')"; **/
+$sql = "INSERT INTO entrada (entrada_titulo,entrada_contenido,entrada_enlace,entrada_autor) VALUES (?,?,?,?)";
+
+$stmt = $this->db->prepare($sql); 
+    try { 
+        $this->db->beginTransaction(); 
+        $stmt->execute( array(
+          $entrada->getentrada_titulo(),
+          $entrada->getentrada_contenido(),
+          $entrada->getentrada_enlace(),
+          $entrada->getentrada_autor()
+          )); 
+        $R = $this->db->lastInsertId();
+                   // echo("hijo de puta".$R);
+        $this->db->commit();  
+        
+/**
                     $imagen = $entrada->getimagen();
                     $data = $imagen->getimagen();
                     $tipo =$imagen->getimagen_tipo();
-                    $r = 3;
-                    //echo $tipo.$data;
+                    
+                    
     $sentencia = $this->db->prepare(" INSERT INTO imagen (imagen, imagen_tipo, entrada_entrada_id) VALUES ( ? , ? , ?) ");
             
         $sentencia->bindParam(1, $data, PDO::PARAM_LOB);
         $sentencia->bindParam(2, $tipo);
-        $sentencia->bindParam(3,$r);
+        $sentencia->bindParam(3,$R);
 
         $this->db->beginTransaction();
         $result = $sentencia->execute();
@@ -137,6 +147,15 @@ $entrada_autor = $entrada->getentrada_autor();
 					        return $result;
 
 					    }
+*/
+                  } catch(PDOExecption $e) { 
+        $this->db->rollback(); 
+        print "Error!: " . $e->getMessage() . "</br>"; 
+    } catch( PDOExecption $e ) { 
+    print "Error!: " . $e->getMessage() . "</br>"; 
+}
+
+return $R; 
 
 					}
 public function eliminar(entrada $entrada) {

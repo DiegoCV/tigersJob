@@ -3,7 +3,7 @@
 
             include_once dirname(__FILE__) . '\Mapper.php';
 
-            include_once dirname(__FILE__).'\entity\imagen.php';
+            include_once dirname(__FILE__).'\..\entity\imagen.php';
 
          class imagenMapper extends Mapper{  
 
@@ -14,8 +14,8 @@
     $stmt->bindColumn(1, $tipo, PDO::PARAM_STR, 256);
     $stmt->bindColumn(2, $lob, PDO::PARAM_LOB);
     $stmt->fetch(PDO::FETCH_BOUND);
-    header("Content-Type: $tipo");
-    print $lob;
+    header("Content-Type:image/png");
+    echo $lob;
     }
 
 

@@ -175,6 +175,7 @@ echo $_SESSION['pagAct'];
         <section class="background-11">
             <div class="container">
                 <div class="row">
+                    
                     <?php echo $var->getEntradas(); ?>                  
 
                     <div class="col-auto mx-auto mt-4">

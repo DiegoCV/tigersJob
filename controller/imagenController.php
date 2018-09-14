@@ -1,7 +1,7 @@
 <?php
-include_once dirname(__FILE__).'\entity\imagen.php';
-include_once dirname(__FILE__).'\mapper\imagenMapper.php';
-include_once dirname(__FILE__).'\core\Render.php';
+include_once dirname(__FILE__).'\..\entity\imagen.php';
+include_once dirname(__FILE__).'\..\mapper\imagenMapper.php';
+include_once dirname(__FILE__).'\..\core\Render.php';
 
 class imagenController{
 
@@ -16,7 +16,7 @@ class imagenController{
         var_dump($imagenMapper->crearimagen($imagen));
 	}
 
-    public function getImagen($entrada_entrada_id){
+    public function getImagen($entrada_entrada_id){ 
         $imagenMapper = new imagenMapper();
         $imagenMapper->getImagen($entrada_entrada_id);
     }
